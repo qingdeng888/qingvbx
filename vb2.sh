@@ -66,7 +66,8 @@ case "$protocol_choice" in
         xieyi="vmess" # 默认值
         ;;
 esac
-
+# 替换config.json中的协议值
+sed -i "s/xieyi/$xieyi/g" /.q/vb/config.json
 # 声明ID变量id，并设置默认值
 read -p "请输入ID（回车默认为1）: " id
 id=${id:-1}
