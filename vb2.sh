@@ -67,7 +67,7 @@ case "$protocol_choice" in
         ;;
 esac
 # 替换config.json中的协议值
-sed -i "s/xieyi/$xieyi/g" /.q/vb/config.json
+sed -i "s/xieyi/$xieyi/g" /.vb2/config.json
 # 声明ID变量id，并设置默认值
 read -p "请输入ID（回车默认为1）: " id
 id=${id:-1}
