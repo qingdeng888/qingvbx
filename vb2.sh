@@ -61,6 +61,7 @@ case "$protocol_choice" in
             read -p "请输入域名 (ym): " ym
         done
         sed -i "s/none/http/g" /.vb2/config.json
+        sed -i "s/yuming/$ym/g" /.vb2/config.json
         ;;
     *)
         xieyi="vmess" # 默认值
