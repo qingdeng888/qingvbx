@@ -6,7 +6,8 @@ if [ -f /etc/systemd/system/vb2.service ]; then
     rm -rf /root/vb2.sh
     exit 1
 fi
-
+apt install unzip -y
+yum install unzip -y
 # 检测机器架构并下载相应的文件
 ARCH=$(uname -m)
 if [ "$ARCH" = "x86_64" ]; then
